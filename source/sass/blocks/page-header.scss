@@ -1,0 +1,55 @@
+.page-header {
+  background-color: #1A2931;
+  background: url('../img/header-background-desktop.png') no-repeat;
+  background-size: cover;
+  min-height: 878px;
+  width: 100%;
+  padding-top: 34px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.page-header__scroll {
+  width: 16px;
+  transform: rotate(180deg);
+}
+
+.page-header__scroll-link {
+  font-size: 0.87rem;
+  text-decoration: none;
+  color: $white;
+  writing-mode: vertical-rl;
+  line-height: 16px;
+  color: $gray;
+}
+
+.page-header__company-description {
+  display: flex;
+}
+
+@media (min-width: $min-tablet) and (max-width: $max-tablet) {
+  .page-header {
+    min-height: 686px;
+    padding-top: 20px;
+    background: url('../img/header-background-tablet.png') no-repeat;
+    background-size: cover;
+  }
+
+  .page-header__scroll {
+    display: none;
+  }
+}
+
+@media (min-width: $min-mobile) and (max-width: $max-mobile) {
+  .page-header {
+    min-height: 647px;
+    background: url('../img/header-background-mobile.png') no-repeat;
+    background-size: cover;
+    padding-top: 17px;
+  }
+
+  .page-header__scroll {
+    display: none;
+  }
+};
