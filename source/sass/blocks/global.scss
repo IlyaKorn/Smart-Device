@@ -8,4 +8,5 @@ body {
   justify-content: space-between;
   overflow-x: hidden;
   min-height: 100vh;
+  margin-right: calc(-1 * (100vw - 100%));
 }

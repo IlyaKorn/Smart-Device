@@ -3,9 +3,9 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  margin-right: 550px;
   text-decoration: none;
-  margin-left: 253px;
+  flex-grow: 1;
+  padding-right: 15px;
 }
 
 .logo__title {
@@ -28,20 +28,7 @@
   margin-right: 16px;
 }
 
-
-@media (min-width: $min-tablet) and (max-width: $max-tablet) {
-  .logo {
-    margin-right: 435px;
-    margin-left: 25px;
-  }
-}
-
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
-  .logo {
-    margin-left: 17px;
-    margin-right: 177px;
-  }
-
   .logo__title {
     display: none;
   }
