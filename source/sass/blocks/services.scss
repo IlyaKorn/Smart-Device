@@ -1,0 +1,87 @@
+.services {
+  background-color: #1B2D37;
+  padding: 88px 0px 127px 0px;
+}
+
+.services__company {
+  width: 61vw;
+  margin: 0 auto;
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  color: $white;
+  font-size: 1.25rem;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.services__title {
+  font-size: 2.25rem;
+  line-height: 51px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 51px;
+}
+
+.services__descriprion {
+  margin: 0;
+}
+
+.services__list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services__item {
+  padding: 53px 20px 50px 44px;
+  position: relative;
+  width: 19.3vw;
+  min-height: 620px;
+  box-sizing: border-box;
+}
+
+.services__item--production::before {
+  background: url('../img/pay-production-desktop.png') no-repeat;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+}
+
+.services__item--installation::before {
+  background: url('../img/pay-installation-desktop.png') no-repeat;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+}
+
+.services__item--light::before {
+  background: url('../img/pay-light-desktop.png') no-repeat;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+}
+
+.services__icon-arrow-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  fill: none;
+  width: 63px;
+  height: 63px;
+  cursor: pointer;
+}
