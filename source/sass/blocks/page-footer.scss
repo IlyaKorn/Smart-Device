@@ -1,0 +1,21 @@
+.page-footer__company__description {
+  display: flex;
+  padding: 58px 13vw 59px 13vw;
+  border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+}
+
+@media (min-width: $min-tablet) and (max-width: $max-tablet) {
+  .page-footer__company__description {
+    padding: 19px 0px 36px 0px;
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $min-mobile) and (max-width: $max-mobile) {
+  .page-footer__company__description {
+    padding: 46px 0px 0px 0px;
+    border-bottom: none;
+    flex-wrap: wrap;
+  }
+}

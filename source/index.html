@@ -163,43 +163,109 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="footer__social social">
-      <a class="footer_logo logo" href="#">
-        <img class="navigation__image" href="#">
-        <p class="navigation__title">Smart Device умные технологии</p>
-      </a>
-      <ul class="social__list">
-        <li class="social__facebook"></li>
-        <li class="social__odnoklassniki"></li>
-        <li class="social__vkontakte"></li>
-      </ul>
-    </div>
-    <div class="page-footer__sections sections">
-      <h5 class="sections__title">Разделы сайта</h5>
-      <ul class="sections__list">
-        <li class="sections__item">О компании</li>
-        <li class="sections__item">Продукты</li>
-        <li class="sections__item">Производство печатных плат</li>
-        <li class="sections__item">Монтаж печатных плат</li>
-        <li class="sections__item">Комплектующие</li>
-        <li class="sections__item">Доставка</li>
-        <li class="sections__item">Контакты</li>
-      </ul>
-    </div>
-    <div class="page-footer__company-address company-address">
-      <h5 class="company-address__title">Наш офис</h5>
-      <p class="company-address__description">
-        г. Мытищи, Олимпийский проспект, д.10
-        +7 (495) 589-40-50
-        +7 (925) 003-87-67
-        +7 (926) 926-080-79
-      </p>
+    <div class="page-footer__company__description">
+      <div class="page__footer-social social">
+        <a class="logo-footer" href="#">
+          <img class="logo-footer__image" src="img/logo.svg" width="52" height="52" alt="Логотип компании Device Service">
+          <p class="logo-footer__title">Service Device<span class="logo-footer__description">умные технологии</span></p>
+        </a>
+        <ul class="social__list">
+          <li class="social__item social__item--facebook">
+            <a class="social__link" href="#">
+              <svg class="social__icon-facebook">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--ok">
+            <a class="social__link" href="#">
+              <svg class="social__icon-ok">
+                <use xlink:href="img/sprite.svg#icon-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--vk">
+            <a class="social__link" href="#">
+              <svg class="social__icon-vk">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__sections sections">
+        <button class="sections__title" type="button">Разделы сайта</button>
+        <ul class="sections__list sections__list--nojs">
+          <li class="sections__item sections__item--company">
+            <a class="sections__link" href="#">
+              О компании
+            </a>
+          </li>
+          <li class="sections__item sections__item--products">
+            <a class="sections__link" href="#">
+              Продукты
+            </a>
+          </li>
+          <li class="sections__item sections__item--production">
+            <a class="sections__link" href="#">
+              Производство печатных плат
+            </a>
+          </li>
+          <li class="sections__item sections__item--montage">
+            <a class="sections__link" href="#">
+              Монтаж печатных плат
+            </a>
+          </li>
+          <li class="sections__item sections__item--details">
+            <a class="sections__link" href="#">
+              Комплектующие
+            </a>
+          </li>
+          <li class="sections__item sections__item--delivery">
+            <a class="sections__link" href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="sections__item sections__item--contacts">
+            <a class="sections__link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__company-address company-address">
+        <button class="company-address__title">Наш офис</button>
+        <ul class="company-address__list company-address__list--nojs">
+          <li class="company-address__item">
+            <a class="company-address__link" href="#">
+              г. Мытищи, Олимпийский проспект, д.10
+            </a>
+          </li>
+          <li class="company-address__item">
+            <a class="company-address__link" href="tel:+74955894050">
+              +7 (495) 589-40-50
+            </a>
+          </li>
+          <li class="company-address__item">
+            <a class="company-address__link" href="tel:+79250038767">
+              +7 (925) 003-87-67
+            </a>
+          </li>
+          <li class="company-address__item">
+            <a class="company-address__link" href="tel:+792692608079">
+              +7 (926) 926-080-79
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__rights">Все права защищены</p>
-      <p class="copyright__company-date">1999-2018 SD Service Devices</p>
-      <p class="copyright__confidentiality-conditions">Условия конфиденциальности></p>
-      <p class="copyright__development">Developed by wow studio</p>
+      <ul class="copyright__list">
+        <li class="copyright__item copyright__item--rights">Все права защищены</li>
+        <li class="copyright__item copyright__item--data">1999-2018 SD Service Devices</li>
+        <li class="copyright__item copyright__item--confidentiality">Условия конфиденциальности</li>
+        <li class="copyright__item copyright__item--development">Developed by wow studio</li>
+      </ul>
     </div>
   </footer>
   <div class="popup">
@@ -220,5 +286,6 @@
       <button class="form__button-close">Закрыть окно</button>
     </form>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
