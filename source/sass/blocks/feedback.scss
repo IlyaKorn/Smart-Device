@@ -1,74 +1,61 @@
-.feedback {
-  color: $white;
-  background: url('../img/feedback-background-desktop.png') no-repeat;
-  background-position: 100% 63%;
-  background-color: $light-blue;
-  padding: 96px 0px 115px 0px;
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  font-size: 16px;
-  line-height: 21.6px;
-}
-
-.feedback__form {
+.feedback-form {
   width: 29.7vw;
   display: flex;
   flex-direction: column;
   margin-right: 375px;
 }
 
-.feedback__title {
+.feedback-form__title {
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-size: 2.25rem;
   line-height: 50.6px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 11px;
 }
 
-.feedback__description {
+.feedback-form__description {
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 51px;
 }
 
-.feedback__data {
+.feedback-form__data {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 40px;
 }
 
-.feedback__name,
-.feedback__telephone,
-.feedback__text {
+.feedback-form__name,
+.feedback-form__telephone,
+.feedback-form__text {
   background-color: #30C1FF;
   outline: none;
   color: $white;
   font-size: 1rem;
 }
 
-.feedback__name::placeholder,
-.feedback__telephone::placeholder,
-.feedback__text::placeholder {
+.feedback-form__name::placeholder,
+.feedback-form__telephone::placeholder,
+.feedback-form__text::placeholder {
   color: $white;
 }
 
-.feedback__name,
-.feedback__telephone {
-  padding: 14px 5px 14px 16px;
+.feedback-form__name,
+.feedback-form__telephone {
+  padding: 11px 5px 14px 16px;
   min-height: 50px;
   box-sizing: border-box;
   border: none;
   width: 14vw;
 }
 
-.feedback__telephone {
+.feedback-form__telephone {
   padding: 14px 5px 14px 17px;
   line-height: 21.5px;
 }
 
-.feedback__text {
+.feedback-form__text {
   padding: 13px 5px 13px 17px;
   box-sizing: border-box;
   border: none;
@@ -78,13 +65,14 @@
   line-height: 22px;
 }
 
-.feedback__pull {
+.feedback-form__pull {
   display: flex;
   align-items: center;
 }
 
-.feedback__button {
-  display: block;
+.feedback-form__button {
+  display: flex;
+  justify-content: center;
   width: 14vw;
   min-height: 45px;
   box-sizing: border-box;
@@ -105,32 +93,32 @@
   margin-right: 70px;
 }
 
-.feedback__confidentiality {
+.feedback-form__confidentiality {
   position: relative;
   width: 12vw;
 }
 
-.feedback__label--checkbox {
+.feedback-form__label--checkbox {
   display: block;
   font-size: 0.85rem;
   line-height: 15.68px;
   cursor: pointer;
 }
 
-.feedback__agreement {
+.feedback-form__agreement {
   opacity: 0.8;
   font-size: 0.87rem;
   line-height: 15,68px;
 }
 
-.feedback__checkbox {
+.feedback-form__checkbox {
   margin-right: 16px;
   background-color: $light-blue;
   border: 1px solid $white;
   position: relative;
 }
 
-.feedback__label--checkbox::before {
+.feedback-form__label--checkbox::before {
   content: '';
   position: absolute;
   display: inline-block;
@@ -142,7 +130,7 @@
   top: 0;
 }
 
-.feedback__label--checkbox::after {
+.feedback-form__label--checkbox::after {
   content: '';
   position: absolute;
   display: inline-block;
@@ -155,58 +143,160 @@
   top: 5px;
 }
 
-.feedback__checkbox[type="checkbox"] + label::after {
+.feedback-form__checkbox[type="checkbox"] + label::after {
   content: none;
 }
 
-.feedback__checkbox[type="checkbox"]:checked + label::after {
+.feedback-form__checkbox[type="checkbox"]:checked + label::after {
   content: "";
 }
 
+.feedback-form--popup {
+  width: 490px;
+  min-height: 605px;
+  background-color: $light-blue;
+  position: absolute;
+  left: calc(50vw - 245px);
+  top: 136px;
+  padding: 32px 39px 36px 39px;
+  box-sizing: border-box;
+}
+
+.feedback-form__title--popup {
+  color: $white;
+  font-size: 1.7rem;
+  line-height: 38px;
+  margin-bottom: 11px;
+}
+
+.feedback-form__description--popup {
+  font-size: 1rem;
+  line-height: 22px;
+  color: $white;
+  width: 382px;
+  margin-bottom: 32px;
+}
+
+.feedback-form__name--popup,
+.feedback-form__telephone--popup {
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 5px 15px 23px;
+}
+
+.feedback-form__data--popup {
+  margin-bottom: 30px;
+}
+
+.feedback-form__name--popup {
+  margin-bottom: 30px;
+}
+
+.feedback-form__text--popup {
+  padding: 11px 5px 15px 26px;
+  min-height: 104px;
+  margin-bottom: 31px;
+}
+
+.feedback-form__pull--popup {
+  flex-wrap: wrap;
+}
+
+.feedback-form__button--popup {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-form__confidentiality--popup {
+  width: 338px;
+  margin-left: 49px;
+}
+
+.feedback-form__agreement--popup {
+  color: $white;
+}
+
+.feedback-form__close-modal {
+  position: absolute;
+  right: 17px;
+  top: 28px;
+  cursor: pointer;
+  width: 23px;
+  height: 23px;
+}
+
+.feedback-form__close-modal::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 23px;
+  height: 1px;
+  background-color: $white;
+  border-radius: 5px;
+  transform: rotate(-45deg);
+}
+
+.feedback-form__close-modal::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 23px;
+  height: 1px;
+  background-color: $white;
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
+
+.feedback-form__label--popup-checkbox::before {
+  left: -49px;
+  top: 1px;
+}
+
+.feedback-form__label--popup-checkbox::after{
+  left: -45px;
+  top: 4px;
+}
+
 @media (min-width: $max-tablet) and (max-width: 1919px) {
-  .feedback__form {
+  .feedback-form {
     width: 39.7vw;
   }
 
-  .feedback__name,
-  .feedback__telephone {
+  .feedback-form__name,
+  .feedback-form__telephone {
     width: 18vw;
   }
 }
 
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
-  .feedback {
-    background-image: none;;
-    padding: 83px 0px 104px 0px;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 16px;
-    line-height: 21.6px;
-  }
 
-  .feedback__form {
+  .feedback-form {
     width: 77vw;
     margin-right: 83px;
   }
 
-  .feedback__title {
+  .feedback-form__title {
     font-size: 2rem;
     line-height: 45px;
     margin: 0;
     margin-bottom: 14px;
   }
 
-  .feedback__description {
+  .feedback-form__description {
     margin-bottom: 55px;
   }
 
-  .feedback__data {
+  .feedback-form__data {
     margin-bottom: 41px;
   }
 
-  .feedback__name,
-  .feedback__telephone {
+  .feedback-form__name,
+  .feedback-form__telephone {
   padding: 14px 5px 14px 17px;
   min-height: 50px;
   box-sizing: border-box;
@@ -214,12 +304,12 @@
   width: 36.4vw;
   }
 
-  .feedback__text {
+  .feedback-form__text {
     min-height: 160px;
     margin-bottom: 44px;
   }
 
-  .feedback__button {
+  .feedback-form__button {
     width: 36.4vw;
     min-height: 47px;
     margin-right: 73px;
@@ -228,44 +318,35 @@
     justify-content: center;
   }
 
-  .feedback__confidentiality {
+  .feedback-form__confidentiality {
     width: 31vw;
   }
 }
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
-  .feedback {
-    background-image: none;
-    padding: 33px 0px 44px 0px;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 16px;
-    line-height: 21.6px;
-  }
 
-  .feedback__form {
+  .feedback-form {
     width: 90.6vw;
     margin: 0 auto;
   }
 
-  .feedback__title {
+  .feedback-form__title {
     font-size: 1.75rem;
     line-height: 38px;
     margin: 0;
     margin-bottom: 14px;
   }
 
-  .feedback__description {
+  .feedback-form__description {
     margin-bottom: 25px;
   }
 
-  .feedback__data {
+  .feedback-form__data {
     margin-bottom: 0;
   }
 
-  .feedback__name,
-  .feedback__telephone {
+  .feedback-form__name,
+  .feedback-form__telephone {
     padding: 14px 5px 14px 17px;
     min-height: 50px;
     box-sizing: border-box;
@@ -275,18 +356,18 @@
     min-height: 52px;
   }
 
-  .feedback__text {
+  .feedback-form__text {
     min-height: 104px;
-    margin-bottom: 31px;
+    margin-bottom: 33px;
   }
 
-  .feedback__pull {
+  .feedback-form__pull {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .feedback__button {
+  .feedback-form__button {
     width: 100vw;
     min-height: 47px;
     margin-right: 0;
@@ -296,18 +377,18 @@
     margin-bottom: 30px;
   }
 
-  .feedback__agreement {
+  .feedback-form__agreement {
     display: block;
     padding-left: 33px;
     width: 74.3vw;
   }
 
-  .feedback__label--checkbox::before {
+  .feedback-form__label--checkbox::before {
     left: 0;
     top: 0;
   }
 
-  .feedback__label--checkbox::after {
+  .feedback-form__label--checkbox::after {
     left: 4px;
     top: 3px;
   }

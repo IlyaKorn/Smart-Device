@@ -4,7 +4,7 @@
   line-height: 22px;
   z-index: 1;
   position: relative;
-  padding-top: 80px;
+  padding-top: 75px;
   padding-left: 28.9vw;
   padding-bottom: 110px;
 }
@@ -20,7 +20,7 @@
   height: 310px;
   background: url('../img/company-info-background.png') no-repeat;
   left: -210px;
-  top: 0;
+  top: 5px;
 }
 
 .company-info__title {
@@ -39,7 +39,7 @@
 
 .company-info__partners {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .company-info__button {
@@ -67,7 +67,7 @@
     width: 69vw;
     font-size: 1rem;
     line-height: 22px;
-    padding-top: 29px;
+    padding-top: 27px;
     padding-left: 27.7vw;
     padding-bottom: 83px;
   }
@@ -94,7 +94,7 @@
   }
 
   .company-info__partners {
-    margin-bottom: 43px;
+    margin-bottom: 40px;
   }
 
   .company-info__partners-name {
@@ -121,11 +121,11 @@
     font-size: 1.75rem;
     line-height: 39px;
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 19px;
   }
 
   .company-info__description {
-    margin-bottom: 42px;
+    margin-bottom: 41px;
   }
 
   .company-info__partners-name {
@@ -133,6 +133,6 @@
   }
 
   .company-info__partners {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 }
