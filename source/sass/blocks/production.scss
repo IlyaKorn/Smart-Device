@@ -52,7 +52,7 @@
   background-color: $white;
 }
 
-.production__button {
+.production__link {
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-weight: bold;
   font-size: 1rem;
@@ -62,7 +62,7 @@
   background-color: $light-blue;
   color: $white;
   box-sizing: border-box;
-  padding: 11px 28px 14px 28px;
+  padding: 17px 28px 14px 28px;
   text-transform: uppercase;
   line-height: 19px;
   text-align: center;
@@ -72,6 +72,8 @@
   width: 21.2vw;
   min-height: 55px;
   cursor: pointer;
+  text-decoration: none;
+  display: block;
 }
 
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -111,7 +113,7 @@
     top: 16px;
   }
 
-  .production__button {
+  .production__link {
     width: 49.3vw;
     height: 55px;
     margin: 0 auto;
@@ -149,7 +151,7 @@
     left: -48px;
   }
 
-  .production__button {
+  .production__link {
     width: 89.7vw;
     height: 55px;
     margin: 0 auto;

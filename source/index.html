@@ -41,15 +41,15 @@
       <p class="production__description">
         производство и монтаж, поставка комплектующих, блоков и модулей
       </p>
-      <button class="production__button">Получить бесплатную консультацию</button>
+      <a class="production__link" href="#form">Получить бесплатную консультацию</a>
       <div class="page-header__scroll">
-        <a class="page-header__scroll-link" href="#">Скролл вниз</a>
+        <a class="page-header__scroll-link" href="#advantages">Скролл вниз</a>
       </div>
     </div>
   </header>
   <main class="page-main">
     <section class="page-main__advantages advantages">
-      <ul class="advantages__list">
+      <ul class="advantages__list" id="advantages">
         <li class="advantages__item advantages__item--timing">
           <h3 class="advantages__title advantages__title--timing">Оперативные сроки</h3>
           <p class="advantages__description">
@@ -138,7 +138,7 @@
         </ul>
       </div>
     </section>
-    <section class="page-main__feedback">
+    <section class="page-main__feedback" id="form">
       <form class="page-main__feedback--form feedback-form" action="https://echo.htmlacademy.ru" method="POST">
         <h4 class="feedback-form__title">Остались вопросы? Задайте их нам!</h4>
         <p class="feedback-form__description">Мы проконсультируем Вас бесплатно</p>
@@ -269,6 +269,7 @@
     </div>
   </footer>
   <div class="popup">
+    <div class="popup__wrapper"></div>
     <form class="popup__form feedback-form feedback-form--popup" action="https://echo.htmlacademy.ru" method="POST">
       <h4 class="feedback-form__title feedback-form__title--popup">Закажите звонок</h4>
       <p class="feedback-form__description feedback-form__description--popup">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
@@ -292,6 +293,7 @@
       <div class="feedback-form__close-modal"><span class="feedback-form__close-modal-text visually-hidden">Закрыть окно</div>
     </form>
   </div>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
