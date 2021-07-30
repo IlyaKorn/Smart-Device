@@ -43,11 +43,17 @@ const getElement = function() {
     const copyrightDataCopy = copyrightData.cloneNode(true);
     copyrightDataCopy.className =  'social__data';
     social.appendChild(copyrightDataCopy);
-    productionLink.textContent = 'Бесплатная консультация';
   }
 };
 
+const changeContentElement = function() {
+  if (deviceWidth < 768) {
+    productionLink.textContent = 'Бесплатная консультация';
+  }
+}
+
 getElement();
+changeContentElement();
 
 navigationPopupButton.addEventListener('click', function() {
   popup.style.display = 'block';
