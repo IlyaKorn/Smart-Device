@@ -23,7 +23,7 @@
   top: 5px;
 }
 
-.company-info__title {
+.company-info h3 {
   font-family: 'Roboto Condensed', "Arial", sans-serif;
   font-weight: normal;
   font-size: 2.2rem;
@@ -32,12 +32,12 @@
   margin-bottom: 19px;
 }
 
-.company-info__description {
+.company-info p {
   margin: 0;
   margin-bottom: 23px;
 }
 
-.company-info__partners {
+.company-info .company-info__partners {
   margin: 0;
   margin-bottom: 38px;
 }
@@ -82,18 +82,18 @@
     top: -6px;
   }
 
-  .company-info__title {
+  .company-info h3 {
     font-size: 2rem;
     line-height: 45px;
     margin: 0;
     margin-bottom: 22px;
   }
 
-  .company-info__description {
+  .company-info p {
     margin-bottom: 21px;
   }
 
-  .company-info__partners {
+  .company-info .company-info__partners {
     margin-bottom: 40px;
   }
 
@@ -117,14 +117,14 @@
     display: none;
   }
 
-  .company-info__title {
+  .company-info h3 {
     font-size: 1.75rem;
     line-height: 39px;
     margin: 0;
     margin-bottom: 19px;
   }
 
-  .company-info__description {
+  .company-info p {
     margin-bottom: 41px;
   }
 
@@ -132,7 +132,7 @@
     display: none;
   }
 
-  .company-info__partners {
+  .company-info .company-info__partners {
     margin-bottom: 28px;
   }
 }

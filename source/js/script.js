@@ -18,6 +18,8 @@ const formName = feedbackForm.querySelector('.feedback-form__name');
 const formTelephone = feedbackForm.querySelector('.feedback-form__telephone');
 const formText = feedbackForm.querySelector('.feedback-form__text');
 const anchors = document.querySelectorAll('a[href*="#');
+const productionLink = document.querySelector('.production__link');
+const companyPartners = document.querySelector('.company-info__partners-name');
 
 sectionsList.classList.remove('sections__list--nojs');
 addressList.classList.remove('company-address__list--nojs');
@@ -41,6 +43,7 @@ const getElement = function() {
     const copyrightDataCopy = copyrightData.cloneNode(true);
     copyrightDataCopy.className =  'social__data';
     social.appendChild(copyrightDataCopy);
+    productionLink.textContent = 'Бесплатная консультация';
   }
 };
 
@@ -49,6 +52,7 @@ getElement();
 navigationPopupButton.addEventListener('click', function() {
   popup.style.display = 'block';
   popup.classList.add('popup-modal-view');
+  popup.querySelector('.feedback-form__name--popup').focus();
 });
 
 popupCloseButton.addEventListener('click', function() {

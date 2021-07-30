@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <title>Smart Device</title>
 </head>
@@ -17,7 +21,7 @@
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--mail">
           <a class="navigation__link" href="mailto:info@sd.ru">
-            <svg class="navigation__link-icon-mail">
+            <svg class="navigation__link-icon-mail" width="19" height="14">
               <use xlink:href="img/sprite.svg#icon-mail"></use>
             </svg>
             <span class="navigation__email">info@sd.ru</span>
@@ -25,7 +29,7 @@
         </li>
         <li class="navigation__item navigation__item--telephone">
           <a class="navigation__link" href="tel:+74950005252">
-            <svg class="navigation__link-icon-telephone">
+            <svg class="navigation__link-icon-telephone" width="19" height="19">
               <use xlink:href="img/sprite.svg#icon-telephone"></use>
             </svg>
             <span class="navigation__telephone">+7 (495) 000 52 52</span>
@@ -51,58 +55,58 @@
     <section class="page-main__advantages advantages">
       <ul class="advantages__list" id="advantages">
         <li class="advantages__item advantages__item--timing">
-          <h3 class="advantages__title advantages__title--timing">Оперативные сроки</h3>
+          <h2 class="advantages__title advantages__title--timing">Оперативные сроки</h2>
           <p class="advantages__description">
             Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
           </p>
-          <svg class="advantages__icon-timer">
+          <svg class="advantages__icon-timer" width="29" height="35">
             <use xlink:href="img/sprite.svg#icon-timer"></use>
           </svg>
         </li>
         <li class="advantages__item advantages__item--suppliers">
-          <h3 class="advantages__title advantages__title--suppliers">Крупные поставщики</h3>
+          <h2 class="advantages__title advantages__title--suppliers">Крупные поставщики</h2>
           <p class="advantages__description">
             Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
           </p>
-          <svg class="advantages__icon-hired">
+          <svg class="advantages__icon-hired" width="35" height="35">
             <use xlink:href="img/sprite.svg#icon-hired"></use>
           </svg>
         </li>
         <li class="advantages__item advantages__item--confidentiality">
-          <h3 class="advantages__title advantages__title--confidentiality">Полная конфиденциальность</h3>
+          <h2 class="advantages__title advantages__title--confidentiality">Полная конфиденциальность</h2>
           <p class="advantages__description">
             По желанию клиента  мы обеспечиваем полную конфеденциальность.
           </p>
-          <svg class="advantages__icon-detective">
+          <svg class="advantages__icon-detective" width="36" height="31">
             <use xlink:href="img/sprite.svg#icon-detective"></use>
           </svg>
         </li>
         <li class="advantages__item advantages__item--price">
-          <h3 class="advantages__title advantages__title--price">Персонализация стоимости</h3>
+          <h2 class="advantages__title advantages__title--price">Персонализация стоимости</h2>
           <p class="advantages__description">
             Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
           </p>
-          <svg class="advantages__icon-tag">
+          <svg class="advantages__icon-tag" width="35" height="35">
             <use xlink:href="img/sprite.svg#icon-tag"></use>
           </svg>
         </li>
       </ul>
-      <svg class="advantages__icon-triangle">
+      <svg class="advantages__icon-triangle" width="488" height="318">
         <use xlink:href="img/sprite.svg#icon-triangle"></use>
       </svg>
-      <svg class="advantages__icon-triangle-mini">
+      <svg class="advantages__icon-triangle-mini" width="488" height="318">
         <use xlink:href="img/sprite.svg#icon-triangle"></use>
       </svg>
-      <svg class="advantages__icon-triangle-with-circle">
+      <svg class="advantages__icon-triangle-with-circle" width="836" height="840">
         <use xlink:href="img/sprite.svg#icon-triangle-with-circle"></use>
       </svg>
-      <svg class="advantages__icon-triangle-with-circle-middle">
+      <svg class="advantages__icon-triangle-with-circle-middle" width="971" height="972">
         <use xlink:href="img/sprite.svg#icon-triangle-with-circle"></use>
       </svg>
     </section>
     <section class="page-main__company-info company-info">
       <div class="company-info__about">
-        <h4 class="company-info__title">О компании</h4>
+        <h3 class="company-info__title">О компании</h3>
         <p class="company-info__description">
           Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
         </p>
@@ -115,32 +119,32 @@
     </section>
     <section class="page-main__services services">
       <div class="services__company">
-        <h4 class="services__title">Service Device предлагает следующие товары и услуги</h4>
+        <h3 class="services__title">Service Device предлагает следующие товары и услуги</h3>
         <ul class="services__list">
           <li class="services__item services__item--production">
             <p class="services__descriprion">Производство<br> печатных плат</p>
-            <svg class="services__icon-arrow-right">
+            <svg class="services__icon-arrow-right" width="63" height="63">
               <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
             </svg>
           </li>
           <li class="services__item services__item--installation">
             <p class="services__descriprion">Монтаж печатных<br> плат</p>
-            <svg class="services__icon-arrow-right">
+            <svg class="services__icon-arrow-right" width="63" height="63">
               <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
             </svg>
           </li>
           <li class="services__item services__item--light">
             <p class="services__descriprion">Комплектующие<br> для светотехники</p>
-            <svg class="services__icon-arrow-right">
+            <svg class="services__icon-arrow-right" width="63" height="63">
               <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
             </svg>
           </li>
         </ul>
       </div>
     </section>
-    <section class="page-main__feedback" id="form">
-      <form class="page-main__feedback--form feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-        <h4 class="feedback-form__title">Остались вопросы? Задайте их нам!</h4>
+    <section class="page-main-feedback" id="form">
+      <form class="page-main-feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+        <h3 class="feedback-form__title">Остались вопросы? Задайте их нам!</h3>
         <p class="feedback-form__description">Мы проконсультируем Вас бесплатно</p>
         <div class="feedback-form__data">
           <label class="feedback-form__label visually-hidden" for="input-name"></label>
@@ -164,7 +168,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__company__description">
-      <div class="page__footer-social social">
+      <div class="page-footer__social social">
         <a class="logo-footer" href="#">
           <img class="logo-footer__image" src="img/logo.svg" width="52" height="52" alt="Логотип компании Device Service">
           <p class="logo-footer__title">Service Device<span class="logo-footer__description">умные технологии</span></p>
@@ -172,21 +176,21 @@
         <ul class="social__list">
           <li class="social__item social__item--facebook">
             <a class="social__link" href="#">
-              <svg class="social__icon-facebook">
+              <svg class="social__icon-facebook" width="27" height="27">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--ok">
             <a class="social__link" href="#">
-              <svg class="social__icon-ok">
+              <svg class="social__icon-ok" width="27" height="27">
                 <use xlink:href="img/sprite.svg#icon-ok"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--vk">
             <a class="social__link" href="#">
-              <svg class="social__icon-vk">
+              <svg class="social__icon-vk" width="27" height="27">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
@@ -271,16 +275,16 @@
   <div class="popup">
     <div class="popup__wrapper"></div>
     <form class="popup__form feedback-form feedback-form--popup" action="https://echo.htmlacademy.ru" method="POST">
-      <h4 class="feedback-form__title feedback-form__title--popup">Закажите звонок</h4>
+      <h3 class="feedback-form__title feedback-form__title--popup">Закажите звонок</h3>
       <p class="feedback-form__description feedback-form__description--popup">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <div class="feedback-form__data feedback-form__data--popup">
-        <label class="feedback-form__label visually-hidden" for="input-name"></label>
-        <input class="feedback-form__name feedback-form__name--popup" id="input-name" placeholder="Имя" required>
-        <label class="feedback-form__label visually-hidden" for="input-telephone"></label>
-        <input class="feedback-form__telephone feedback-form__telephone--popup" id="input-telephone" placeholder="Телефон" required>
+        <label class="feedback-form__label visually-hidden" for="input-name-popup"></label>
+        <input class="feedback-form__name feedback-form__name--popup" id="input-name-popup" placeholder="Имя" required>
+        <label class="feedback-form__label visually-hidden" for="input-telephone-popup"></label>
+        <input class="feedback-form__telephone feedback-form__telephone--popup" id="input-telephone-popup" placeholder="Телефон" required>
       </div>
-      <label class="feedback-form__label" for="textarea"></label>
-      <textarea class="feedback-form__text feedback-form__text--popup" id="textarea" placeholder="Ваш вопрос"></textarea>
+      <label class="feedback-form__label" for="textarea-popup"></label>
+      <textarea class="feedback-form__text feedback-form__text--popup" id="textarea-popup" placeholder="Ваш вопрос"></textarea>
       <div class="feedback-form__pull feedback-form__pull--popup">
         <button class="feedback-form__button feedback-form__button--popup" type="submit">Отправить</button>
         <div class="feedback-form__confidentiality feedback-form__confidentiality--popup">
@@ -290,7 +294,7 @@
           </label>
         </div>
       </div>
-      <div class="feedback-form__close-modal"><span class="feedback-form__close-modal-text visually-hidden">Закрыть окно</div>
+      <div class="feedback-form__close-modal"><span class="feedback-form__close-modal-text visually-hidden">Закрыть окно</span></div>
     </form>
   </div>
   <script src="https://unpkg.com/imask"></script>

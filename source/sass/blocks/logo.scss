@@ -7,7 +7,7 @@
   flex-grow: 1;
 }
 
-.logo__title {
+.logo p {
   font-size: 1.56rem;
   color: $white;
   margin: 0;
@@ -36,7 +36,7 @@
   margin-bottom: 54px;
 }
 
-.logo-footer__title {
+.logo-footer p {
   font-size: 1.56rem;
   color: #203C42;
   margin: 0;
@@ -66,7 +66,7 @@
 }
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
-  .logo__title {
+  .logo p {
     display: none;
   }
 
