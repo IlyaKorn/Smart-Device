@@ -2,6 +2,7 @@
   display: flex;
   padding: 60px 13vw 59px 13vw;
   border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+  flex: 0 0 auto;
 }
 
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
