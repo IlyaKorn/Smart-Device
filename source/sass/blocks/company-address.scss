@@ -33,6 +33,10 @@
   color: #1B2D37;
 }
 
+.company-address__link:hover {
+  opacity: 0.8;
+}
+
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
   .company-address {
     padding-top: 38px;

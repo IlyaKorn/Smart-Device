@@ -57,6 +57,10 @@
   color: #1B2D37;
 }
 
+.sections__link:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 1919px) {
   .sections__list {
     grid-template-columns: 240px;

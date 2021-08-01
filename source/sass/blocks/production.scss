@@ -10,7 +10,7 @@
 
 .production::after {
   content: '';
-  background: url('../img/chip-desktop.png'), url('../img/chip-triangle-desktop.png') no-repeat;
+  background: url('../img/chip-desktop.webp'), url('../img/chip-triangle-desktop.webp') no-repeat;
   background-position: 100% 100%, 0 110%;
   position: absolute;
   left: 787px;
@@ -76,6 +76,10 @@
   display: block;
 }
 
+.production__link:hover {
+  opacity: 0.8;
+}
+
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
   .production {
     padding-top: 116px;
@@ -86,7 +90,7 @@
   .production::after {
     content: '';
     position: absolute;
-    background: url('../img/chip-tablet.png');
+    background: url('../img/chip-tablet.webp');
     left: 353px;
     top: -52px;
     width: 528px;
@@ -127,7 +131,7 @@
   }
 
   .production::after {
-    background: url('../img/chip-mobile.png') no-repeat;
+    background: url('../img/chip-mobile.webp') no-repeat;
     left: 10px;
     top: -101px;
     position: absolute;

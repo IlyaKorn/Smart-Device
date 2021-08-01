@@ -31,8 +31,20 @@
 .feedback-form__text {
   background-color: #30C1FF;
   outline: none;
-  color: $white;
+  color: rgba(27, 45, 55, 0.6);
   font-size: 1rem;
+}
+
+.feedback-form__name:hover,
+.feedback-form__telephone:hover,
+.feedback-form__text:hover {
+  opacity: 0.6;
+}
+
+.feedback-form__name:focus,
+.feedback-form__telephone:focus,
+.feedback-form__text:focus {
+  opacity: 1;
 }
 
 .feedback-form__name::placeholder,
@@ -93,9 +105,17 @@
   margin-right: 70px;
 }
 
+.feedback-form__button:hover {
+  opacity: 0.6;
+}
+
 .feedback-form__confidentiality {
   position: relative;
   width: 12vw;
+}
+
+.feedback-form__confidentiality:hover {
+  opacity: 0.6;
 }
 
 .feedback-form__label--checkbox {

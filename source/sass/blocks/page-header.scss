@@ -1,6 +1,6 @@
 .page-header {
   background-color: #1A2931;
-  background: url('../img/header-background-desktop.jpg') no-repeat;
+  background: url('../img/header-background-desktop.webp') no-repeat;
   background-size: cover;
   min-height: 878px;
   width: 100%;
@@ -33,7 +33,7 @@
   .page-header {
     min-height: 686px;
     padding-top: 20px;
-    background: url('../img/header-background-tablet.jpg') no-repeat;
+    background: url('../img/header-background-tablet.webp') no-repeat;
     background-size: cover;
   }
 
@@ -45,7 +45,7 @@
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
   .page-header {
     min-height: 647px;
-    background: url('../img/header-background-mobile.jpg') no-repeat;
+    background: url('../img/header-background-mobile.webp') no-repeat;
     background-size: cover;
     padding-top: 17px;
   }
