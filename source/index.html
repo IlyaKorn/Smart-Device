@@ -8,7 +8,7 @@
   <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Smart Device</title>
 </head>
 <body>
@@ -42,13 +42,26 @@
         </div>
       </nav>
       <div class="page-header__info production">
-        <h1 class="production__title">Печатные платы</h1>
-        <p class="production__description">
-          производство и монтаж, поставка комплектующих, блоков и модулей
-        </p>
-        <a class="production__link" href="#form">Получить бесплатную консультацию</a>
-        <div class="page-header__scroll">
-          <a class="page-header__scroll-link" href="#advantages">Скролл вниз</a>
+        <div class="production__info">
+          <h1 class="production__title">Печатные платы</h1>
+          <p class="production__description">
+            производство и монтаж, поставка комплектующих, блоков и модулей
+          </p>
+          <a class="production__link" href="#form">Получить бесплатную консультацию</a>
+          <div class="page-header__scroll">
+            <a class="page-header__scroll-link" href="#advantages">Скролл вниз</a>
+          </div>
+        </div>
+        <div class="production__pay-image">
+          <picture class="production__card-image">
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/chip-desktop.webp 1x, img/chip-desktop-2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/chip-tablet.webp 1x, img/chip-tablet-2x.webp 2x">
+            <source type="image/webp" srcset="img/chip-mobile.webp 1x, img/chip-mobile-2x.webp 2x">
+            <source media="(min-width: 1024px)" srcset="img/chip-desktop.png 1x, img/chip-desktop-2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/chip-tablet.png 1x, img/chip-tablet-2x.png 2x">
+            <!-- 1x: 713px; 2x: 1426px -->
+            <img class="production__image" src="img/chip-mobile.png" srcset="img/chip-mobile-2x.png 2x" alt="Фото изготовляемой платы">
+          </picture>
         </div>
       </div>
     </header>

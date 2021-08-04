@@ -43,44 +43,27 @@
   min-height: 620px;
   box-sizing: border-box;
   margin-bottom: 10px;
+  isolation: isolate;
+}
+
+.services__item--production {
+  background: linear-gradient(rgba(27, 45, 55, 0.8),rgba(27, 45, 55, 0.8)),url('../img/pay-production-desktop.webp');
+  background-size: cover;
+}
+
+.services__item--installation {
+  background: linear-gradient(rgba(27, 45, 55, 0.8),rgba(27, 45, 55, 0.8)),url('../img/pay-installation-desktop.webp');
+  background-size: cover;
+}
+
+.services__item--light {
+  background: linear-gradient(rgba(27, 45, 55, 0.8),rgba(27, 45, 55, 0.8)),url('../img/pay-light-desktop.webp');
+  background-size: cover;
 }
 
 .services__item:hover {
   cursor: pointer;
   border: 1px solid $white;
-}
-
-.services__item--production::before {
-  background: url('../img/pay-production-desktop.png') no-repeat;
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0.2;
-}
-
-.services__item--installation::before {
-  background: url('../img/pay-installation-desktop.png') no-repeat;
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0.2;
-}
-
-.services__item--light::before {
-  background: url('../img/pay-light-desktop.png') no-repeat;
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0.2;
 }
 
 .services__icon-arrow-right {
@@ -91,10 +74,6 @@
   width: 63px;
   height: 63px;
   cursor: pointer;
-}
-
-.services__item::before {
-  background-size: cover;
 }
 
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -127,49 +106,24 @@
     margin-bottom: 46px;
   }
 
+  .services__item--production {
+    background: linear-gradient(rgba(27, 45, 55, 0.2),rgba(27, 45, 55, 0.2)),url('../img/pay-production-tablet.webp');
+    background-size: cover;
+  }
+
+  .services__item--installation {
+    background: linear-gradient(rgba(27, 45, 55, 0.2),rgba(27, 45, 55, 0.2)),url('../img/pay-installation-tablet.webp');
+    background-size: cover;
+  }
+
+  .services__item--light {
+    background: linear-gradient(rgba(27, 45, 55, 0.2),rgba(27, 45, 55, 0.2)),url('../img/pay-light-tablet.webp');
+    background-size: cover;
+  }
+
   .services__item--light {
     padding: 51px 20px 43px 46px;
     margin-bottom: 0;
-  }
-
-  .services__item--production::before {
-    background: url('../img/pay-production-tablet.png') no-repeat;
-    background-size: cover;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.8;
-  }
-
-  .services__item--installation::before {
-    background: url('../img/pay-installation-tablet.png') no-repeat;
-    background-size: cover;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.8;
-  }
-
-  .services__item--light::before {
-    background: url('../img/pay-light-tablet.png') no-repeat;
-    background-size: cover;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.8;
-  }
-
-  .services__item::before {
-    background-size: cover;
   }
 }
 
@@ -204,48 +158,23 @@
     min-height: 256px;
   }
 
+  .services__item--production {
+    background: linear-gradient(rgba(27, 45, 55, 0.2),rgba(27, 45, 55, 0.2)),url('../img/pay-production-mobile.webp');
+    background-size: cover;
+  }
+
+  .services__item--installation {
+    background: linear-gradient(rgba(27, 45, 55, 0.2),rgba(27, 45, 55, 0.2)),url('../img/pay-installation-mobile.webp');
+    background-size: cover;
+  }
+
+  .services__item--light {
+    background: linear-gradient(rgba(27, 45, 55, 0.2),rgba(27, 45, 55, 0.2)),url('../img/pay-light-mobile.webp');
+    background-size: cover;
+  }
+
   .services__item--light {
     padding-top: 31px;
     margin-bottom: 0;
-  }
-
-  .services__item--production::before {
-    background: url('../img/pay-production-mobile.png') no-repeat;
-    background-size: cover;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 1;
-  }
-
-  .services__item--installation::before {
-    background: url('../img/pay-installation-mobile.png') no-repeat;
-    background-size: cover;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 1;
-  }
-
-  .services__item--light::before {
-    background: url('../img/pay-light-mobile.png') no-repeat;
-    background-size: cover;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 1;
-  }
-
-  .services__item::before {
-    background-size: cover;
   }
 }

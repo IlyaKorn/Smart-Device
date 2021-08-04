@@ -6,18 +6,11 @@
   z-index: 1;
   width: 74vw;
   box-sizing: border-box;
+  z-index: 3;
 }
 
-.production::after {
-  content: '';
-  background: url('../img/chip-desktop.webp'), url('../img/chip-triangle-desktop.webp') no-repeat;
-  background-position: 100% 100%, 0 110%;
-  position: absolute;
-  left: 787px;
-  top: 172px;
-  width: 705px;
-  height: 515px;
-  z-index: -1;
+.production__info {
+  z-index: 3;
 }
 
 .production h1 {
@@ -80,21 +73,18 @@
   opacity: 0.8;
 }
 
+.production__pay-image {
+  position: absolute;
+  right: -73px;
+  top: 33px;
+  z-index: -1;
+}
+
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
   .production {
     padding-top: 116px;
     width: 77vw;
     padding-right: 54px;
-  }
-
-  .production::after {
-    content: '';
-    position: absolute;
-    background: url('../img/chip-tablet.webp');
-    left: 353px;
-    top: -52px;
-    width: 528px;
-    height: 505px;
   }
 
   .production h1 {
@@ -123,18 +113,19 @@
     margin: 0 auto;
     margin-left: 50px;
   }
+
+  .production__pay-image {
+    background: none;
+    position: absolute;
+    right: -294px;
+    top: -65px;
+    z-index: -1;
+  }
 }
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
   .production {
     width: 90vw;
-  }
-
-  .production::after {
-    background: url('../img/chip-mobile.webp') no-repeat;
-    left: 10px;
-    top: -101px;
-    position: absolute;
   }
 
   .production h1 {
@@ -147,7 +138,7 @@
     font-size: 1rem;
     line-height: 25px;
     margin-left: 50px;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
   }
 
   .production p::before {
@@ -159,5 +150,12 @@
     width: 89.7vw;
     height: 55px;
     margin: 0 auto;
+  }
+
+  .production__pay-image {
+    position: absolute;
+    right: -353px;
+    top: -100px;
+    z-index: -1;
   }
 }
