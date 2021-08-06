@@ -61,12 +61,12 @@
   height: 35px;
 }
 
-.advantages h2,
-.advantages p {
+.advantages__item h2,
+.advantages__item p {
   margin: 0;
 }
 
-.advantages h2 {
+.advantages__item h2 {
   margin-bottom: 15px;
   color: $light-blue;
   font-size: 1.5rem;
@@ -194,15 +194,15 @@
     line-height: 33,75px;
   }
 
-  .advantages .advantages__title--timing {
+  .advantages__item--timing h2 {
     margin-bottom: 8px;
   }
 
-  .advantages .advantages__title--suppliers {
+  .advantages__item--suppliers h2 {
     margin-bottom: 9px;
   }
 
-  .advantages .advantages__title--confidentiality {
+  .advantages__item--confidentiality h2 {
     margin-bottom: 14px;
   }
 
@@ -295,16 +295,15 @@
     font-weight: 400;
   }
 
-
-  .advantages .advantages__title--timing {
+  .advantages__item--timing h2 {
     margin-bottom: 11px;
   }
 
-  .advantages .advantages__title--suppliers {
+  .advantages__item--suppliers h2 {
     margin-bottom: 6px;
   }
 
-  .advantages .advantages__title--confidentiality {
+  .advantages__item--confidentiality h2 {
     margin-bottom: 14px;
   }
 

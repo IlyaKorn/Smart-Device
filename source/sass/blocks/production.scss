@@ -2,6 +2,7 @@
   color: $white;
   margin: 0 auto;
   padding-top: 231px;
+  padding-bottom: 92px;
   position: relative;
   z-index: 1;
   width: 74vw;
@@ -83,6 +84,7 @@
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
   .production {
     padding-top: 116px;
+    padding-bottom: 162px;
     width: 77vw;
     padding-right: 54px;
   }
@@ -121,11 +123,17 @@
     top: -65px;
     z-index: -1;
   }
+
+  .production__pay-image img {
+    width: auto;
+    height: auto;
+  }
 }
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
   .production {
     width: 90vw;
+    padding-bottom: 69px;
   }
 
   .production h1 {
@@ -157,5 +165,10 @@
     right: -353px;
     top: -100px;
     z-index: -1;
+  }
+
+  .production__pay-image img {
+    width: auto;
+    height: auto;
   }
 }

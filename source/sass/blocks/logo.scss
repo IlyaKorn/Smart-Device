@@ -23,7 +23,7 @@
   display: block;
 }
 
-.logo__image {
+.logo img {
   margin-right: 16px;
 }
 
@@ -50,11 +50,11 @@
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 14px;
-  color: $gray;
+  color: #788891;
   display: block;
 }
 
-.logo-footer__image {
+.logo-footer img {
   margin-right: 16px;
 }
 
@@ -70,7 +70,7 @@
     display: none;
   }
 
-  .logo__image {
+  .logo img {
     width: 38px;
     height: 38px;
     margin: 0;
@@ -80,7 +80,7 @@
     margin-bottom: 0;
   }
 
-  .logo-footer__image {
+  .logo-footer img {
     width: 52px;
     height: 52px;
     margin-right: 16px;

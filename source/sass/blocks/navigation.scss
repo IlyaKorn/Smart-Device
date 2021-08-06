@@ -1,7 +1,7 @@
 .navigation {
   display: flex;
-  padding-left: 13.2vw;
-  padding-right: 13.3vw;
+  width: 73.5vw;
+  margin: 0 auto;
 }
 
 .navigation__list {
@@ -87,9 +87,8 @@
 
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
   .navigation {
-    padding-left: 25px;
-    padding-right: 17px;
-  };
+    width: 93.7vw;
+  }
 
   .navigation__email,
   .navigation__telephone {
@@ -122,8 +121,7 @@
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
   .navigation {
-    padding-left: 17px;
-    padding-right: 15px;
+    width: 90vw;
   }
 
   .navigation__email,
