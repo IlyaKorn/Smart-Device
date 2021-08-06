@@ -14,9 +14,14 @@ const popupCloseButton = popup.querySelector('.feedback-form__close-modal');
 const popupWrapper = popup.querySelector('.popup__wrapper');
 const pullform = document.querySelector('.feedback-form__button');
 const feedbackForm = document.querySelector('.feedback-form');
-const formName = feedbackForm.querySelector('.feedback-form__name');
-const formTelephone = feedbackForm.querySelector('.feedback-form__telephone');
-const formText = feedbackForm.querySelector('.feedback-form__text');
+const mainFeedbackForm = feedbackForm.querySelector('form');
+const popupFeedbackForm = popup.querySelector('form');
+const formName = document.getElementById('input-name');
+const formTelephone = document.getElementById('input-telephone');
+const formText = document.getElementById('textarea');
+const formNamePopup = document.getElementById('input-name-popup');
+const formTelephonePopup = document.getElementById('input-telephone-popup');
+const formTextPopup = document.getElementById('textarea-popup');
 const anchors = document.querySelectorAll('a[href*="#');
 const productionLink = document.querySelector('.production__link');
 const companyPartners = document.querySelector('.company-info__partners-name');
@@ -58,7 +63,7 @@ changeContentElement();
 navigationPopupButton.addEventListener('click', function() {
   popup.style.display = 'block';
   popup.classList.add('popup-modal-view');
-  popup.querySelector('.feedback-form__name--popup').focus();
+  formNamePopup.focus();
 });
 
 popupCloseButton.addEventListener('click', function() {
@@ -81,10 +86,22 @@ popupWrapper.addEventListener('click', function() {
   }
 });
 
-feedbackForm.addEventListener('submit', function(evt) {
+mainFeedbackForm.addEventListener('submit', function(evt) {
   localStorage.setItem('name', formName.value);
   localStorage.setItem('telephone', formTelephone.value);
   localStorage.setItem('text', formText.value);
+  formName.value = '';
+  formTelephone.value = '';
+  formText.value = '';
+})
+
+popupFeedbackForm.addEventListener('submit', function(evt) {
+  localStorage.setItem('name', formNamePopup.value);
+  localStorage.setItem('telephone', formTelephonePopup.value);
+  localStorage.setItem('text', formTextPopup.value);
+  formNamePopup.value = '';
+  formTelephonePopup.value = '';
+  formTextPopup.value = '';
 })
 
 for (let anchor of anchors) {
@@ -102,3 +119,8 @@ var phoneMask = IMask(
   formTelephone, {
     mask: '+{7}(000)000-00-00'
   });
+
+  var phoneMaskPopup = IMask(
+    formTelephonePopup, {
+      mask: '+{7}(000)000-00-00'
+    });
