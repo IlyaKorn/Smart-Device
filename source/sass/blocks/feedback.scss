@@ -2,7 +2,7 @@
   width: 29.7vw;
   display: flex;
   flex-direction: column;
-  margin-right: 375px;
+  margin-right: 19.6vw;
 }
 
 .feedback-form h3 {
@@ -312,6 +312,10 @@
   .feedback-form input {
     width: 18vw;
   }
+
+  .popup input {
+    width: 100%;
+  }
 }
 
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -360,6 +364,10 @@
 
   .feedback-form__confidentiality {
     width: 31vw;
+  }
+
+  .popup input {
+    width: 100%;
   }
 }
 
@@ -431,5 +439,9 @@
   .feedback-form__confidentiality label::after {
     left: 4px;
     top: 3px;
+  }
+
+  .popup input {
+    width: 100%;
   }
 }

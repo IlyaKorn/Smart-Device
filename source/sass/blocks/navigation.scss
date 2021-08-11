@@ -1,7 +1,8 @@
 .navigation {
   display: flex;
   width: 73.5vw;
-  margin: 0 auto;
+  margin-left: 13vw;
+  margin-right: 13.3vw;
 }
 
 .navigation__list {
@@ -47,7 +48,7 @@
 }
 
 .navigation__item--telephone {
-  margin-right: 49px;
+  margin-right: 2.5vw;
 }
 
 .navigation__link-icon-telephone {
@@ -75,7 +76,7 @@
   padding: 10px 13px 10px 12px;
   outline: none;
   background: transparent;
-  width: 9.5vw;
+  width: 180px;
   min-height: 45px;
   text-align: center;
   cursor: pointer;
@@ -88,6 +89,7 @@
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
   .navigation {
     width: 93.7vw;
+    margin: 0 auto;
   }
 
   .navigation__email,
@@ -122,6 +124,8 @@
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
   .navigation {
     width: 90vw;
+    margin-left: 5.3vw;
+    margin-right: 4.7vw;
   }
 
   .navigation__email,

@@ -4,7 +4,7 @@
   background-size: cover;
   min-height: 878px;
   width: 100%;
-  padding-top: 34px;
+  padding-top: 33px;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
@@ -34,6 +34,7 @@
     min-height: 686px;
     padding-top: 20px;
     background: url('../img/header-background-tablet.webp') no-repeat;
+    background-color: #1A2931;
     background-size: cover;
   }
 
@@ -47,7 +48,8 @@
     min-height: 647px;
     background: url('../img/header-background-mobile.webp') no-repeat;
     background-size: cover;
-    padding-top: 17px;
+    background-color: #1A2931;
+    padding-top: 11px;
   }
 
   .page-header__scroll {

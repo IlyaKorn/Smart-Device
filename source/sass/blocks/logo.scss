@@ -5,13 +5,10 @@
   align-items: center;
   text-decoration: none;
   flex-grow: 1;
-}
-
-.logo p {
-  font-size: 1.56rem;
+  text-decoration: none;
+  text-transform: none;
   color: $white;
-  margin: 0;
-  line-height: 29px;
+  height: 52px;
 }
 
 .logo__description {
@@ -34,15 +31,9 @@
   text-decoration: none;
   padding-right: 0;
   margin-bottom: 54px;
-}
-
-.logo-footer p {
-  font-size: 1.56rem;
-  color: #203C42;
-  margin: 0;
-  line-height: 29px;
-  width: 148px;
-  padding-top: 6px;
+  text-decoration: none;
+  text-transform: none;
+  color: $white;
 }
 
 .logo-footer__description {
@@ -54,10 +45,6 @@
   display: block;
 }
 
-.logo-footer img {
-  margin-right: 16px;
-}
-
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
   .logo-footer {
     margin-bottom: 0;
@@ -66,10 +53,6 @@
 }
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
-  .logo p {
-    display: none;
-  }
-
   .logo img {
     width: 38px;
     height: 38px;
@@ -81,9 +64,6 @@
   }
 
   .logo-footer img {
-    width: 52px;
-    height: 52px;
-    margin-right: 16px;
     margin-bottom: 26px;
   }
 }

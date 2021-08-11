@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-right: 10.9vw;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social__list {
@@ -25,12 +26,8 @@
   opacity: 0.6;
 }
 
-.social__item--facebook {
+.social__item:not(:last-child) {
   margin-right: 15px;
-}
-
-.social__icon-ok {
-  margin-right: 16px;
 }
 
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -68,7 +65,7 @@
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
     align-items: center;
     width: 100vw;
-    padding: 0px 43px 49px 44px;
+    padding: 0px 0px 49px 0px;
   }
 
   .social__data {
