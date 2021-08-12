@@ -34,7 +34,6 @@ sectionAccordeon.addEventListener('click', function() {
   sectionsList.classList.toggle('active');
   sectionAccordeon.classList.toggle('active');
   addressList.classList.remove('active');
-
 });
 
 addressAccordeon.addEventListener('click', function() {

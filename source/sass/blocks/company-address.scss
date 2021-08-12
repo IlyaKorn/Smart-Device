@@ -49,7 +49,6 @@
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
   .company-address {
-    padding: 24px 33px 25px 15px;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
     width: 100vw;
     position: relative;
@@ -59,12 +58,14 @@
     font-weight: normal;
     cursor: pointer;
     margin: 0;
-    padding: 0;
     margin-bottom: 0;
+    padding: 24px 33px 25px 15px;
+    display: flex;
+    width: 100%;
   }
 
-  .company-address__title.active {
-    margin-bottom: 33px;
+  .company-address__title.active::after{
+    display: none;
   }
 
   .company-address__title::before {
@@ -90,6 +91,8 @@
 
   .company-address__list {
     display: none;
+    padding-left: 25px;
+    padding-bottom: 23px;
   }
 
   .company-address__list.company-address__list--nojs {

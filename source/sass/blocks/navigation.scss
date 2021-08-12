@@ -74,7 +74,6 @@
   box-sizing: border-box;
   border-radius: 5px;
   padding: 10px 13px 10px 12px;
-  outline: none;
   background: transparent;
   width: 180px;
   min-height: 45px;
@@ -84,6 +83,11 @@
 
 .navigation__button:hover {
   opacity: 0.6;
+}
+
+.navigation__button:focus {
+  border: 2px solid #FFFFFF;
+  opacity: 0.7;
 }
 
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {

@@ -137,22 +137,28 @@
         <h3>Service Device предлагает следующие товары и услуги</h3>
         <ul class="services__list">
           <li class="services__item services__item--production">
-            <p>Производство<br> печатных плат</p>
-            <svg class="services__icon-arrow-right" width="63" height="63">
-              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-            </svg>
+            <a class="services__item-link">
+              <p>Производство<br> печатных плат</p>
+              <svg class="services__icon-arrow-right" width="63" height="63">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
           </li>
           <li class="services__item services__item--installation">
-            <p>Монтаж печатных<br> плат</p>
-            <svg class="services__icon-arrow-right" width="63" height="63">
-              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-            </svg>
+            <a class="services__item-link">
+              <p>Монтаж печатных<br> плат</p>
+              <svg class="services__icon-arrow-right" width="63" height="63">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
           </li>
           <li class="services__item services__item--light">
-            <p>Комплектующие<br> для светотехники</p>
-            <svg class="services__icon-arrow-right" width="63" height="63">
-              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-            </svg>
+            <a class="services__item-link">
+              <p>Комплектующие<br> для светотехники</p>
+              <svg class="services__icon-arrow-right" width="63" height="63">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -164,9 +170,9 @@
           <p>Мы проконсультируем Вас бесплатно</p>
           <div class="feedback-form__data">
             <label class="visually-hidden" for="input-name"></label>
-            <input id="input-name" placeholder="Имя" aria-label="Поле для ввода имени" required="">
+            <input id="input-name" type="name" placeholder="Имя" aria-label="Поле для ввода имени" required="">
             <label class="visually-hidden" for="input-telephone"></label>
-            <input id="input-telephone" placeholder="Телефон" aria-label="Поле для ввода телефона" required="">
+            <input id="input-telephone" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона" required="">
           </div>
           <label class="visually-hidden" for="textarea"></label>
           <textarea id="textarea" placeholder="Ваш вопрос"></textarea>
@@ -214,7 +220,7 @@
         </ul>
       </div>
       <div class="page-footer__sections sections">
-        <button class="sections__title" type="button">Разделы сайта</button>
+        <button class="sections__title" type="button" tabindex="-1">Разделы сайта</button>
         <ul class="sections__list sections__list--nojs">
           <li class="sections__item sections__item--company">
             <a class="sections__link" href="#">
@@ -254,7 +260,7 @@
         </ul>
       </div>
       <div class="page-footer__company-address company-address">
-        <button class="company-address__title">Наш офис</button>
+        <button class="company-address__title" tabindex="-1">Наш офис</button>
         <ul class="company-address__list company-address__list--nojs">
           <li class="company-address__item">
             <a class="company-address__link" href="#">
@@ -296,9 +302,9 @@
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <div class="feedback-form__data feedback-form__data--popup">
           <label class="visually-hidden" for="input-name-popup"></label>
-          <input id="input-name-popup" placeholder="Имя" aria-label="Поле для ввода имени" required="">
+          <input id="input-name-popup" type="name" placeholder="Имя" aria-label="Поле для ввода имени" required="">
           <label for="input-telephone-popup"></label>
-          <input id="input-telephone-popup" placeholder="Телефон" aria-label="Поле для ввода телефона" required="">
+          <input id="input-telephone-popup" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона" required="">
         </div>
         <label for="textarea-popup"></label>
         <textarea id="textarea-popup" placeholder="Ваш вопрос"></textarea>

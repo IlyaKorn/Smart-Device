@@ -81,7 +81,6 @@
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
   .sections {
-    padding: 26px 17px 22px 15px;
     margin: 0;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
     width: 100vw;
@@ -93,10 +92,13 @@
     cursor: pointer;
     margin-bottom: 0;
     padding: 0;
+    padding: 26px 17px 22px 15px;
+    width: 100%;
+    display: flex;
   }
 
-  .sections__title.active {
-    margin-bottom: 33px;
+  .sections__title.active::after{
+    display: none;
   }
 
   .sections__title::before {
@@ -122,6 +124,8 @@
 
   .sections__list {
     display: none;
+    padding-left: 25px;
+    padding-bottom: 23px;
   }
 
   .sections__list.sections__list--nojs {

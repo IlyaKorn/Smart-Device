@@ -25,6 +25,7 @@ const formTextPopup = document.getElementById('textarea-popup');
 const anchors = document.querySelectorAll('a[href*="#');
 const productionLink = document.querySelector('.production__link');
 const companyPartners = document.querySelector('.company-info__partners-name');
+const bodyPage = document.querySelector('body');
 
 sectionsList.classList.remove('sections__list--nojs');
 addressList.classList.remove('company-address__list--nojs');
@@ -34,13 +35,14 @@ sectionAccordeon.addEventListener('click', function() {
   sectionsList.classList.toggle('active');
   sectionAccordeon.classList.toggle('active');
   addressList.classList.remove('active');
-
+  addressAccordeon.classList.remove('active');
 });
 
 addressAccordeon.addEventListener('click', function() {
   addressList.classList.toggle('active');
   addressAccordeon.classList.toggle('active');
   sectionsList.classList.remove('active');
+  sectionAccordeon.classList.remove('active');
 });
 
 const getElement = function() {
@@ -63,11 +65,13 @@ changeContentElement();
 navigationPopupButton.addEventListener('click', function() {
   popup.style.display = 'block';
   popup.classList.add('popup-modal-view');
+  bodyPage.style.position = 'fixed';
   formNamePopup.focus();
 });
 
 popupCloseButton.addEventListener('click', function() {
   popup.style.display = 'none';
+  bodyPage.style.position = 'static';
 });
 
 window.addEventListener('keydown', function(evt) {
@@ -75,6 +79,7 @@ window.addEventListener('keydown', function(evt) {
     if (popup.classList.contains('popup-modal-view')) {
       popup.classList.remove('popup-modal-view');
       popup.style.display = 'none';
+      bodyPage.style.position = 'static';
     }
   }
 });
@@ -83,6 +88,7 @@ popupWrapper.addEventListener('click', function() {
   if (popup.classList.contains('popup-modal-view')) {
     popup.classList.remove('popup-modal-view');
     popup.style.display = 'none';
+    bodyPage.style.position = 'static';
   }
 });
 
@@ -93,6 +99,7 @@ mainFeedbackForm.addEventListener('submit', function(evt) {
   formName.value = '';
   formTelephone.value = '';
   formText.value = '';
+  bodyPage.style.position = 'static';
 })
 
 popupFeedbackForm.addEventListener('submit', function(evt) {
