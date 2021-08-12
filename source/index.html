@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Smart Device</title>
 </head>
@@ -15,8 +15,10 @@
   <header class="page-header">
     <nav class="page-header__navigation navigation">
       <a class="navigation__logo logo" href="#">
-        <img src="img/logo.svg" width="52" height="52" alt="Логотип компании Device Service">
-        <p>Smart Device<br><span class="logo__description">умные технологии</span></p>
+        <picture class="logo__image">
+          <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+          <img src="img/logo.svg" width="212" height="52" alt="Логотип компании Device Service">
+        </picture>
       </a>
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--mail">
@@ -135,22 +137,28 @@
         <h3>Service Device предлагает следующие товары и услуги</h3>
         <ul class="services__list">
           <li class="services__item services__item--production">
-            <p>Производство<br> печатных плат</p>
-            <svg class="services__icon-arrow-right" width="63" height="63">
-              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-            </svg>
+            <a class="services__item-link" href="#">
+              <p>Производство<br> печатных плат</p>
+              <svg class="services__icon-arrow-right" width="63" height="63">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
           </li>
           <li class="services__item services__item--installation">
-            <p>Монтаж печатных<br> плат</p>
-            <svg class="services__icon-arrow-right" width="63" height="63">
-              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-            </svg>
+            <a class="services__item-link" href="#">
+              <p>Монтаж печатных<br> плат</p>
+              <svg class="services__icon-arrow-right" width="63" height="63">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
           </li>
           <li class="services__item services__item--light">
-            <p>Комплектующие<br> для светотехники</p>
-            <svg class="services__icon-arrow-right" width="63" height="63">
-              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-            </svg>
+            <a class="services__item-link" href="#">
+              <p>Комплектующие<br> для светотехники</p>
+              <svg class="services__icon-arrow-right" width="63" height="63">
+                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -162,16 +170,16 @@
           <p>Мы проконсультируем Вас бесплатно</p>
           <div class="feedback-form__data">
             <label class="visually-hidden" for="input-name"></label>
-            <input id="input-name" placeholder="Имя" aria-label="Поле для ввода имени" required>
+            <input id="input-name" type="name" placeholder="Имя" aria-label="Поле для ввода имени" required="">
             <label class="visually-hidden" for="input-telephone"></label>
-            <input id="input-telephone" placeholder="Телефон" aria-label="Поле для ввода телефона" required>
+            <input id="input-telephone" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона" required="">
           </div>
           <label class="visually-hidden" for="textarea"></label>
           <textarea id="textarea" placeholder="Ваш вопрос"></textarea>
           <div class="feedback-form__pull">
             <button class="feedback-form__button" type="submit">Задать вопрос</button>
             <div class="feedback-form__confidentiality">
-              <input class="visually-hidden" id="input-checkbox" type="checkbox" aria-label="Согласие на обработку данных" checked required>
+              <input class="visually-hidden" id="input-checkbox" type="checkbox" aria-label="Согласие на обработку данных" checked="" required="">
               <label for="input-checkbox">
                 <span class="feedback-form__agreement">Я согласен на обработку персональных данных</span>
               </label>
@@ -185,8 +193,7 @@
     <div class="page-footer__company__description">
       <div class="page-footer__social social">
         <a class="logo-footer" href="#">
-          <img src="img/logo.svg" width="52" height="52" alt="Логотип компании Device Service">
-          <p>Service Device<br><span class="logo-footer__description">умные технологии</span></p>
+          <img src="img/logo-footer.svg" width="216" height="52" alt="Логотип компании Device Service">
         </a>
         <ul class="social__list">
           <li class="social__item social__item--facebook">
@@ -213,7 +220,7 @@
         </ul>
       </div>
       <div class="page-footer__sections sections">
-        <button class="sections__title" type="button">Разделы сайта</button>
+        <button class="sections__title" type="button" tabindex="-1">Разделы сайта</button>
         <ul class="sections__list sections__list--nojs">
           <li class="sections__item sections__item--company">
             <a class="sections__link" href="#">
@@ -253,7 +260,7 @@
         </ul>
       </div>
       <div class="page-footer__company-address company-address">
-        <button class="company-address__title">Наш офис</button>
+        <button class="company-address__title" tabindex="-1">Наш офис</button>
         <ul class="company-address__list company-address__list--nojs">
           <li class="company-address__item">
             <a class="company-address__link" href="#">
@@ -295,16 +302,16 @@
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <div class="feedback-form__data feedback-form__data--popup">
           <label class="visually-hidden" for="input-name-popup"></label>
-          <input id="input-name-popup" placeholder="Имя" aria-label="Поле для ввода имени" required>
+          <input id="input-name-popup" type="name" placeholder="Имя" aria-label="Поле для ввода имени" required="">
           <label for="input-telephone-popup"></label>
-          <input id="input-telephone-popup" placeholder="Телефон" aria-label="Поле для ввода телефона" required>
+          <input id="input-telephone-popup" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона" required="">
         </div>
         <label for="textarea-popup"></label>
         <textarea id="textarea-popup" placeholder="Ваш вопрос"></textarea>
         <div class="feedback-form__pull feedback-form__pull--popup">
           <button class="feedback-form__button feedback-form__button--popup" type="submit">Отправить</button>
           <div class="feedback-form__confidentiality feedback-form__confidentiality--popup">
-            <input class="visually-hidden" id="input-checkbox--popup" type="checkbox" aria-label="Согласие на обработку данных" checked required>
+            <input class="visually-hidden" id="input-checkbox--popup" type="checkbox" aria-label="Согласие на обработку данных" checked="" required="">
             <label for="input-checkbox--popup">
               <span class="feedback-form__agreement feedback-form__agreement--popup">Я согласен на обработку персональных данных</span>
             </label>

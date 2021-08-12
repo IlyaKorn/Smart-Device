@@ -14,6 +14,7 @@
   margin: 0;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
 .copyright__item {
@@ -37,7 +38,9 @@
 
 @media (min-width: $min-tablet) and (max-width: $max-tablet) {
   .copyright {
-    padding: 21px 26px 24px 27px;
+    padding: 21px 0px 24px 0px;
+    margin-left: 3.5vw;
+    margin-right: 3.4vw;
   }
 
   .copyright__list {
@@ -59,7 +62,7 @@
 
 @media (min-width: $min-mobile) and (max-width: $max-mobile) {
   .copyright {
-    padding: 28px 51px 26px 52px;
+    padding: 28px 0px 26px 0px;
   }
 
   .copyright__list {

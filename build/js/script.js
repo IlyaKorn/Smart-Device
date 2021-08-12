@@ -125,9 +125,9 @@ for (let anchor of anchors) {
 var phoneMask = IMask(
   formTelephone, {
     mask: '+{7}(000)000-00-00'
-  });
+});
 
-  var phoneMaskPopup = IMask(
-    formTelephonePopup, {
-      mask: '+{7}(000)000-00-00'
-    });
+var phoneMaskPopup = IMask(
+  formTelephonePopup, {
+    mask: '+{7}(000)000-00-00'
+});
